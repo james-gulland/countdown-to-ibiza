@@ -45,7 +45,7 @@ body {
 
 #hms {
   margin-top: 0px;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-weight: bold;
   /* font-weight: 500; */
 }
