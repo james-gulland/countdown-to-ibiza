@@ -89,6 +89,7 @@ body {
     }
   
     #days {
+      font-family: 'Space Mono', monospace;
       font-size: 160px;
     }
 
@@ -98,7 +99,7 @@ body {
 
   }
 
-    /* 2778x1284 pixels at 458ppi */
+/* 2778x1284 pixels at 458ppi */
 @media only screen 
   and (device-width: 428px) 
   and (device-height: 926px) 
@@ -112,6 +113,7 @@ body {
     }
   
     #days {
+      font-family: 'Space Mono', monospace;
       font-size: 160px;
     }
 
