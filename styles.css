@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
 
 body {
   padding: 0;
@@ -73,7 +73,7 @@ body {
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
   }
 
-} */
+}
 
 @media only screen 
   and (device-width: 390px) 
@@ -100,7 +100,7 @@ body {
 
   }
 
-/* 2778x1284 pixels at 458ppi */
+/* 2778x1284 pixels at 458ppi
 @media only screen 
   and (device-width: 428px) 
   and (device-height: 926px) 
