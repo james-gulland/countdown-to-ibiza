@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
 
-body {
-  padding: 0;
-  margin: 0;
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  font-family: 'Space Mono', monospace;
-}
-
 @font-face {
   font-family: 'Space Mono';
   font-style: regular;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/spacemono/v12/i7dSIFZifjKcF5UAWdDRYERE_FeqHCSR.woff2) format('woff2');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  font-family: 'Space Mono', monospace;
 }
 
 .container {
@@ -24,6 +24,13 @@ body {
     justify-content: center;
     /* border: 1px solid black; */
   }
+
+.tree {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px rgba(0, 0, 255, .2);
+}
 
 .para {
   margin: 0px 0px 10px 0px;
@@ -38,7 +45,7 @@ body {
   justify-content: center;
   /* border: 1px dotted black; */
   border-radius: 40px;
-  padding: 0px 60px 0px 60px;
+  padding: 0px 52px 0px 52px;
   background-color: white;
   margin: 0;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
@@ -48,16 +55,9 @@ body {
   font-size: 80px;
   margin-top: 30px;
   margin-bottom: 30px;
+  word-spacing: -15px;
   /* border: 1px solid black; */
 }
-
-/* body,
-.para,
-#days  {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-style: italic;
-} */
 
 #hms {
   margin-top: 0px;
@@ -66,6 +66,7 @@ body {
   /* font-weight: 500; */
 }
 
+/* for iPhone 13 Pro and 14 Pro */
 @media only screen 
   and (device-width: 390px) 
   and (device-height: 844px) 
@@ -73,6 +74,14 @@ body {
     .container {
       height: 60vh;
     }
+
+    .tree {
+      font-size: 60px;
+    }
+
+    .box {
+      padding: 0px 46px 0px 46px;
+    }
     
     .para {
       font-size: 56px;
@@ -86,16 +95,16 @@ body {
       font-family: 'Space Mono', monospace;
       font-weight: 700;
       font-style: italic;
+      word-spacing: -20px;
     }
 
     #hms {
       font-size: 40px;
       font-family: 'Courier New', Courier, monospace;
     }
-
   }
 
-/* 2778x1284 pixels at 458ppi */
+/* For iPhone 13 and 14 Max. 2778x1284 pixels at 458ppi */
 @media only screen 
   and (device-width: 428px) 
   and (device-height: 926px) 
@@ -103,7 +112,15 @@ body {
     .container {
       height: 60vh;
     }
+
+    .tree {
+      font-size: 60px;
+    }
     
+    .box {
+      padding: 0px 46px 0px 46px;
+    }
+
     .para {
       font-size: 56px;
       font-family: 'Space Mono', monospace;
@@ -125,11 +142,12 @@ body {
   
   }
 
-/* @media only screen and (max-width: 500px) {
+/* Smaller deskptop browser sizes only */
+@media only screen and (max-width: 500px) {
     .para {
       font-size: 30px;
     }
     #days {
       font-size: 60px;
     }
-  } */
+  }
